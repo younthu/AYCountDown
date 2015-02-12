@@ -1,0 +1,17 @@
+{
+  "name": "AYCountDown",
+  "version": "1.0.2",
+  "license": "MIT",
+  "summary": "Simple code for counting down with dispatch loop",
+  "homepage": "https://github.com/younthu/AYCountDown",
+  "authors": "Andrew Yang",
+  "source": {
+    "git": "https://github.com/younthu/AYCountDown.git",
+    "tag": "1.0.2"
+  },
+  "source_files": "AYCountDown/library/AYCountDownWithBlock.{h,m}",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "7.0"
+  }
+}
