@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6AD08B71A8C8B780062FAF2 /* AYCountDownWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AD08B61A8C8B780062FAF2 /* AYCountDownWithBlock.m */; };
+		A6AD08BD1A8C8F440062FAF2 /* AYCountDownWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AD08BC1A8C8F440062FAF2 /* AYCountDownWithBlock.m */; };
 		A6D62D5F1A81A8370046D5DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D62D5E1A81A8370046D5DE /* main.m */; };
 		A6D62D621A81A8370046D5DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D62D611A81A8370046D5DE /* AppDelegate.m */; };
 		A6D62D651A81A8370046D5DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D62D641A81A8370046D5DE /* ViewController.m */; };
@@ -15,7 +15,6 @@
 		A6D62D6A1A81A8370046D5DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D62D691A81A8370046D5DE /* Images.xcassets */; };
 		A6D62D6D1A81A8370046D5DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D62D6B1A81A8370046D5DE /* LaunchScreen.xib */; };
 		A6D62D791A81A8370046D5DE /* AYCountDownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D62D781A81A8370046D5DE /* AYCountDownTests.m */; };
-		A6D62D841A81ABCD0046D5DE /* AYCountDownWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D62D831A81ABCD0046D5DE /* AYCountDownWithBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A6AD08B51A8C8B780062FAF2 /* AYCountDownWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYCountDownWithBlock.h; sourceTree = "<group>"; };
-		A6AD08B61A8C8B780062FAF2 /* AYCountDownWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYCountDownWithBlock.m; sourceTree = "<group>"; };
+		A6AD08BB1A8C8F440062FAF2 /* AYCountDownWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYCountDownWithBlock.h; path = library/AYCountDownWithBlock.h; sourceTree = SOURCE_ROOT; };
+		A6AD08BC1A8C8F440062FAF2 /* AYCountDownWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYCountDownWithBlock.m; path = library/AYCountDownWithBlock.m; sourceTree = SOURCE_ROOT; };
 		A6D62D591A81A8370046D5DE /* AYCountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYCountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D62D5D1A81A8370046D5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D62D5E1A81A8370046D5DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,8 +43,6 @@
 		A6D62D721A81A8370046D5DE /* AYCountDownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AYCountDownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D62D771A81A8370046D5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D62D781A81A8370046D5DE /* AYCountDownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AYCountDownTests.m; sourceTree = "<group>"; };
-		A6D62D821A81ABCD0046D5DE /* AYCountDownWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYCountDownWithBlock.h; sourceTree = "<group>"; };
-		A6D62D831A81ABCD0046D5DE /* AYCountDownWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYCountDownWithBlock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +66,8 @@
 		A6AD08B41A8C8B120062FAF2 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				A6AD08B51A8C8B780062FAF2 /* AYCountDownWithBlock.h */,
-				A6AD08B61A8C8B780062FAF2 /* AYCountDownWithBlock.m */,
+				A6AD08BB1A8C8F440062FAF2 /* AYCountDownWithBlock.h */,
+				A6AD08BC1A8C8F440062FAF2 /* AYCountDownWithBlock.m */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -105,8 +102,6 @@
 				A6D62D691A81A8370046D5DE /* Images.xcassets */,
 				A6D62D6B1A81A8370046D5DE /* LaunchScreen.xib */,
 				A6D62D5C1A81A8370046D5DE /* Supporting Files */,
-				A6D62D821A81ABCD0046D5DE /* AYCountDownWithBlock.h */,
-				A6D62D831A81ABCD0046D5DE /* AYCountDownWithBlock.m */,
 			);
 			path = AYCountDown;
 			sourceTree = "<group>";
@@ -240,8 +235,7 @@
 				A6D62D651A81A8370046D5DE /* ViewController.m in Sources */,
 				A6D62D621A81A8370046D5DE /* AppDelegate.m in Sources */,
 				A6D62D5F1A81A8370046D5DE /* main.m in Sources */,
-				A6AD08B71A8C8B780062FAF2 /* AYCountDownWithBlock.m in Sources */,
-				A6D62D841A81ABCD0046D5DE /* AYCountDownWithBlock.m in Sources */,
+				A6AD08BD1A8C8F440062FAF2 /* AYCountDownWithBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
