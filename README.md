@@ -12,3 +12,15 @@ Sample Code :
       }
       return YES;
       }];
+
+#  How to use it
+
+You can use it in two ways:
+
+* Download and add "AYCountDownWithBlock.h" & "AYCountDownWithBlock.h" into your project.
+* Install it via cocoapods by adding following line:
+
+        pod "AYCountDown", :git=> 'https://github.com/younthu/AYCountDown.git'
+
+
+Enjoy it!
