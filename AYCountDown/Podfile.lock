@@ -1,0 +1,19 @@
+PODS:
+  - AYCountDown (1.0.3)
+
+DEPENDENCIES:
+  - AYCountDown (from `https://github.com/younthu/AYCountDown.git`)
+
+EXTERNAL SOURCES:
+  AYCountDown:
+    :git: https://github.com/younthu/AYCountDown.git
+
+CHECKOUT OPTIONS:
+  AYCountDown:
+    :commit: 491f82ec4797e4240cb6e6d09159f2142fe7722a
+    :git: https://github.com/younthu/AYCountDown.git
+
+SPEC CHECKSUMS:
+  AYCountDown: e7f9b1edee592a1c4d39f0019da7c028da1f1839
+
+COCOAPODS: 0.35.0

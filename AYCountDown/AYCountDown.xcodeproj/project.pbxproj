@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6AD08BD1A8C8F440062FAF2 /* AYCountDownWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AD08BC1A8C8F440062FAF2 /* AYCountDownWithBlock.m */; };
+		74EC353A686CEDC0C57AAC39 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 975AF9B6035A429BD8B67B2D /* libPods.a */; };
 		A6D62D5F1A81A8370046D5DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D62D5E1A81A8370046D5DE /* main.m */; };
 		A6D62D621A81A8370046D5DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D62D611A81A8370046D5DE /* AppDelegate.m */; };
 		A6D62D651A81A8370046D5DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D62D641A81A8370046D5DE /* ViewController.m */; };
@@ -28,8 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A6AD08BB1A8C8F440062FAF2 /* AYCountDownWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AYCountDownWithBlock.h; path = library/AYCountDownWithBlock.h; sourceTree = SOURCE_ROOT; };
-		A6AD08BC1A8C8F440062FAF2 /* AYCountDownWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AYCountDownWithBlock.m; path = library/AYCountDownWithBlock.m; sourceTree = SOURCE_ROOT; };
+		372C0A7D19DA6F380592794D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5683D83896B899B1B8D2B4C3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		975AF9B6035A429BD8B67B2D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D62D591A81A8370046D5DE /* AYCountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYCountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D62D5D1A81A8370046D5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D62D5E1A81A8370046D5DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74EC353A686CEDC0C57AAC39 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,11 +65,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		963F510D661EE70E14D3593D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				975AF9B6035A429BD8B67B2D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1A457342B9223A3AF8EC85C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5683D83896B899B1B8D2B4C3 /* Pods.debug.xcconfig */,
+				372C0A7D19DA6F380592794D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6AD08B41A8C8B120062FAF2 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				A6AD08BB1A8C8F440062FAF2 /* AYCountDownWithBlock.h */,
-				A6AD08BC1A8C8F440062FAF2 /* AYCountDownWithBlock.m */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -78,6 +95,8 @@
 				A6D62D5B1A81A8370046D5DE /* AYCountDown */,
 				A6D62D751A81A8370046D5DE /* AYCountDownTests */,
 				A6D62D5A1A81A8370046D5DE /* Products */,
+				A1A457342B9223A3AF8EC85C /* Pods */,
+				963F510D661EE70E14D3593D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6D62D7C1A81A8370046D5DE /* Build configuration list for PBXNativeTarget "AYCountDown" */;
 			buildPhases = (
+				F94DE228BA2A5D45D53B78DA /* Check Pods Manifest.lock */,
 				A6D62D551A81A8370046D5DE /* Sources */,
 				A6D62D561A81A8370046D5DE /* Frameworks */,
 				A6D62D571A81A8370046D5DE /* Resources */,
+				E44061FD83C5B48B3F23CF5F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +248,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E44061FD83C5B48B3F23CF5F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F94DE228BA2A5D45D53B78DA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6D62D551A81A8370046D5DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -235,7 +289,6 @@
 				A6D62D651A81A8370046D5DE /* ViewController.m in Sources */,
 				A6D62D621A81A8370046D5DE /* AppDelegate.m in Sources */,
 				A6D62D5F1A81A8370046D5DE /* main.m in Sources */,
-				A6AD08BD1A8C8F440062FAF2 /* AYCountDownWithBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +408,7 @@
 		};
 		A6D62D7D1A81A8370046D5DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5683D83896B899B1B8D2B4C3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AYCountDown/Info.plist;
@@ -365,6 +419,7 @@
 		};
 		A6D62D7E1A81A8370046D5DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372C0A7D19DA6F380592794D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AYCountDown/Info.plist;
